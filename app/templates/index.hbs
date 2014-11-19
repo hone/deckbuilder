@@ -1,0 +1,4 @@
+{{#each card in model}}
+  <h3>{{ card.Title }}</h3>
+  <img {{bind-attr src=card.Front.ImagePath}}>
+{{/each}}
