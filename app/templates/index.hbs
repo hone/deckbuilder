@@ -1,4 +1,3 @@
 {{#each card in model}}
-  <h3>{{ card.Title }}</h3>
-  <img {{bind-attr src=card.Front.ImagePath}}>
+  <h3>{{#link-to "card" card}}{{ card.Title }}{{/link-to}}</h3>
 {{/each}}
