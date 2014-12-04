@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('card', {path: "cards/:id"})
+  this.route('card', {path: "cards/:id"});
 });
 
 export default Router;
