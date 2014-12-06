@@ -1,3 +1,5 @@
-{{#each card in model}}
+{{input value=searchTerm}}
+
+{{#each card in filteredList}}
   <h3>{{#link-to "card" card}}{{ card.Title }}{{/link-to}}</h3>
 {{/each}}
